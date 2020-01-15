@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+#stage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+    background-image: url(../images/bg.jpg);
+    overflow: hidden;
+}
+
+#hero,
+#mybullet,
+.enemy,
+.ebullet,
+.temp {
+    position: absolute;
+}
+#info{
+    position: absolute;
+    width:500px;
+    height: 40px;
+    line-height: 40px;
+    background-color: white;
+    left:50%;
+    top:calc(50% - 270px);
+    transform: translate(-50%,-50%);
+}
+#info>div{
+    float: left;
+    width: calc(100% / 3);
+}
+#level{
+    text-align: right;
+}
+#score{
+    text-align: right;
+}
+
+@keyframes ani{
+    0%{filter: brightness(1);}
+    50%{filter :brightness(2);}
+    100%{filter :brightness(1);}
+}
+
+.respon{
+    animation-name:ani;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+}
+.life{
+    height: 30px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
